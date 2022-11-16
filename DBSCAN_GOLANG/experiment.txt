@@ -1,0 +1,20 @@
+Number of CPUS for all test: 12
+
+N=2, C=4, Avg Time=23.389660485s
+N=4, C=1, Avg Time=19.8065016s
+N=4, C=2, Avg Time=15.7562761s
+N=4, C=4, Avg Time=8.395185s
+N=4, C=10, Avg Time=9.516557075s
+N=10, C=1, Avg Time=6.48738238s
+N=10, C=4, Avg Time=3.116945746s
+N=10, C=10, Avg Time=2.43259748s
+N=10, C=50, Avg Time=2.35479832s
+N=20, C=1, Avg Time=5.419273153s
+N=20, C=4, Avg Time=3.4386769s
+N=20, C=10, Avg Time=2.304591706s
+N=20, C=50, Avg Time=2.2609625s
+N=20, C=200, Avg Time=2.1533985s
+
+From the experiment, I noticed that 1 consumer thread takes more time for the program to run because there's only one task
+taking the different jobs. Depending on the number of cluster, at a certain number of consumer threads,
+adding more consumer doesn't improve much the running time of the program it makes it a little bit faster. 
